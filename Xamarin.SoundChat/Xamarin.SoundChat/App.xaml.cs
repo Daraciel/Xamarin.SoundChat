@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using Xamarin.SoundChat.Views;
 
 namespace Xamarin.SoundChat
 {
@@ -13,7 +14,7 @@ namespace Xamarin.SoundChat
         {
             InitializeComponent();
 
-            MainPage = new Xamarin.SoundChat.MainPage();
+            MainPage = new NavigationPage(new LoginView());
         }
 
         protected override void OnStart()

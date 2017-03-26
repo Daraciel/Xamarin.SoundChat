@@ -1,0 +1,17 @@
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.SoundChat.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.SoundChat.pdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.App.xaml.g.cs
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.Views.LoginView.xaml.g.cs
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.Views.ChatListView.xaml.g.cs
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.pdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.dll.mdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.SoundChat.dll.mdb
