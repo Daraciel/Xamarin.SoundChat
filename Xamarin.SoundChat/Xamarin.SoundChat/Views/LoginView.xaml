@@ -6,27 +6,27 @@
     <ContentPage.Content>
         <StackLayout>
             <Label
-            Text="Usuario"
-            />
+                Text="Usuario"
+                />
             <Entry
-            Text="{Binding Username, Mode=OneWayToSource}"
-            Placeholder="Usuario"
-            />
+                Text="{Binding Username, Mode=OneWayToSource}"
+                Placeholder="Usuario"
+                />
             <Label 
-            Text="Password"
-            />
+                Text="Password"
+                />
             <Entry
-            Text="{Binding Password, Mode=OneWayToSource}"
-            IsPassword="True"
-            Placeholder="Password"
-            />
+                Text="{Binding Password, Mode=OneWayToSource}"
+                IsPassword="True"
+                Placeholder="Password"
+                />
             <Button
-            Text="Login"
-            Command="{Binding LoginCommand}"
-            />
+                Text="Login"
+                Command="{Binding LoginCommand}"
+                />
             <Label
-            Text="{Binding LoginResult, Mode=OneWay}"
-            />
+                Text="{Binding LoginResult, Mode=OneWay}"
+                />
         </StackLayout>
     </ContentPage.Content>
     

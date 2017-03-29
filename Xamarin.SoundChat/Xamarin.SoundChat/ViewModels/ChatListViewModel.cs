@@ -1,4 +1,6 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Xamarin.SoundChat.ViewModels
@@ -8,6 +10,7 @@ namespace Xamarin.SoundChat.ViewModels
         #region FIELDS
 
         private string _username;
+        private ObservableCollection<ChatViewModel> _chats;
 
         #endregion
 
@@ -26,6 +29,19 @@ namespace Xamarin.SoundChat.ViewModels
             }
         }
 
+        public ObservableCollection<ChatViewModel> Chats
+        {
+            get { return _chats; }
+            set
+            {
+                if(_chats != value)
+                {
+                    _chats = value;
+                    OnPropertyChanged("Chats");
+                }
+            }
+        }
+
         #endregion
 
         #region CONSTRUCTORS
@@ -33,12 +49,63 @@ namespace Xamarin.SoundChat.ViewModels
         public ChatListViewModel(string username)
         {
             Username = username;
+#if DEBUG
+            PopulateDummyChatListView();
+#else
+            PopulateChatListView();
+#endif
         }
 
         #endregion
 
-        #region COMMANDS
+        #region test
+
+        private void PopulateDummyChatListView()
+        {
+            ObservableCollection<ChatViewModel> chats = null;
+            chats = new ObservableCollection<ChatViewModel>();
+
+            chats.Add(CreateDummyChat1());
+            chats.Add(CreateDummyChat2());
+
+            _chats = chats;
+        }
+
+        private ChatViewModel CreateDummyChat2()
+        {
+            ChatViewModel result = null;
+
+            result = new ChatViewModel("DummyChat002");
+
+            return result;
+        }
+
+        private ChatViewModel CreateDummyChat1()
+        {
+            ChatViewModel result = null;
+
+            result = new ChatViewModel("DummyChat001");
+
+            return result;
+        }
 
         #endregion
+
+        #region PRIVATE METHODS
+
+        private void PopulateChatListView()
+        {
+            ObservableCollection<ChatViewModel> chats = new ObservableCollection<ChatViewModel>();
+            ChatViewModel auxChat = null;
+
+
+            _chats = chats;
+        }
+
+#endregion
+
+#region COMMANDS
+
+#endregion
     }
 }
