@@ -2,6 +2,7 @@
 
 using System;
 using Xamarin.Forms;
+using Xamarin.SoundChat.Models;
 
 namespace Xamarin.SoundChat.ViewModels.Base
 {
@@ -9,67 +10,36 @@ namespace Xamarin.SoundChat.ViewModels.Base
     {
         #region FIELDS
 
-        private ContactViewModel _source;
-        private DateTime _timestamp;
-        private string _text;
+        private Message _message;
         
         #endregion
 
         #region PROPERTIES
 
-        public ContactViewModel Source
+        public Message Message
         {
             get
             {
-                return _source;
+                return _message;
             }
             set
             {
-                if(_source != value)
+                if(_message != value)
                 {
-                    _source = value;
-                    OnPropertyChanged("Source");
+                    _message = value;
+                    OnPropertyChanged("Message");
                 }
             }
         }
-
-        public DateTime Timestamp
-        {
-            get
-            {
-                return _timestamp;
-            }
-
-            set
-            {
-                if(_timestamp != value)
-                {
-                    _timestamp = value;
-                    OnPropertyChanged("Timestamp");
-                }
-            }
-
-        }
-
-        public string Text
-        {
-            get
-            {
-                return _text;
-            }
-            set
-            {
-                if(_text != value)
-                {
-                    _text = value;
-                    OnPropertyChanged("Text");
-                }
-            }
-        }
-
+        
         #endregion
 
         #region CONSTRUCTORS
+
+        public IMessageViewModel(string Id)
+        {
+            this.Message = new Message();
+        }
 
         #endregion
 

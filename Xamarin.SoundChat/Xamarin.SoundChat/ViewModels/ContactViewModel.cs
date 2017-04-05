@@ -1,5 +1,6 @@
 ﻿
 using Xamarin.Forms;
+using Xamarin.SoundChat.Models;
 
 namespace Xamarin.SoundChat.ViewModels
 {
@@ -7,58 +8,24 @@ namespace Xamarin.SoundChat.ViewModels
     {
         #region FIELDS
 
-        private string _name;
-        private string _phone;
-        private Image _avatar;
+        private Contact _contact;
 
         #endregion
 
         #region PROPERTIES
 
-        public string Name
+        public Contact Contact
         {
             get
             {
-                return _name;
+                return _contact;
             }
             set
             {
-                if(_name != value)
+                if(_contact != value)
                 {
-                    _name = value;
-                    OnPropertyChanged("Name");
-                }
-            }
-        }
-
-        public string Phone
-        {
-            get
-            {
-                return _phone;
-            }
-            set
-            {
-                if (_phone != value)
-                {
-                    _phone = value;
-                    OnPropertyChanged("Phone");
-                }
-            }
-        }
-
-        public Image Avatar
-        {
-            get
-            {
-                return _avatar;
-            }
-            set
-            {
-                if (_avatar != value)
-                {
-                    _avatar = value;
-                    OnPropertyChanged("Avatar");
+                    _contact = value;
+                    OnPropertyChanged("Contact");
                 }
             }
         }
@@ -67,11 +34,9 @@ namespace Xamarin.SoundChat.ViewModels
 
         #region CONSTRUCTORS
 
-        public ContactViewModel(string name, string phone, Image img)
+        public ContactViewModel(string Id)
         {
-            _name = name;
-            _phone = phone;
-            _avatar = img;
+            this.Contact = new Contact();
         }
 
         #endregion

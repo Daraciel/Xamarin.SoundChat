@@ -18,3 +18,17 @@ C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Micros
 C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\obj\Debug\SoundChat.Server.csprojResolveAssemblyReference.cache
 C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\obj\Debug\SoundChat.Server.dll
 C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\obj\Debug\SoundChat.Server.pdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Owin.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Owin.Security.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Newtonsoft.Json.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Owin.dll
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Owin.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Microsoft.Owin.Security.xml
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\SoundChat.Server\bin\Newtonsoft.Json.xml

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
+using Xamarin.SoundChat.Models;
 using Xamarin.SoundChat.ViewModels.Base;
 
 namespace Xamarin.SoundChat.ViewModels
@@ -10,105 +11,37 @@ namespace Xamarin.SoundChat.ViewModels
     {
         #region FIELDS
 
-        private string _id;
-        private string _name;
-        private Image _avatar;
-        private ObservableCollection<ContactViewModel> _participants;
-        private ObservableCollection<IMessageViewModel> _messages;
+        private Chat _chat;
 
         #endregion
 
         #region PROPERTIES
 
-        public string ID
+        public Chat Chat
         {
             get
             {
-                return _id;
+                return _chat;
             }
             set
             {
-                if (_id != value)
+                if (_chat != value)
                 {
-                    _id = value;
-                    OnPropertyChanged("ID");
+                    _chat = value;
+                    OnPropertyChanged("Chat");
                 }
             }
         }
-
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                if (_name != value)
-                {
-                    _name = value;
-                    OnPropertyChanged("Name");
-                }
-            }
-        }
-
-        public Image Avatar
-        {
-            get
-            {
-                return _avatar;
-            }
-            set
-            {
-                if (_avatar != value)
-                {
-                    _avatar = value;
-                    OnPropertyChanged("Avatar");
-                }
-            }
-        }
-
-        public ObservableCollection<ContactViewModel> Participants
-        {
-            get
-            {
-                return _participants;
-            }
-            set
-            {
-                if(_participants != value)
-                {
-                    _participants = value;
-                    OnPropertyChanged("Participants");
-                }
-            }
-        }
-
-        public ObservableCollection<IMessageViewModel> Messages
-        {
-            get
-            {
-                return _messages;
-            }
-            set
-            {
-                if(_messages != value)
-                {
-                    _messages = value;
-                    OnPropertyChanged("Messages");
-                }
-            }
-        }
-
+        
         #endregion
 
         #region CONSTRUCTORS
 
-        public ChatViewModel(string id)
+        public ChatViewModel(string Id)
         {
-            _id = id;
+            
 #if DEBUG
-            PopulateDummyChatView();
+            PopulateDummyChatView(Id);
 #else
             PopulateChatView();
 #endif
@@ -118,9 +51,9 @@ namespace Xamarin.SoundChat.ViewModels
 
         #region test
         
-        private void PopulateDummyChatView()
+        private void PopulateDummyChatView(string Id)
         {
-            switch(_id)
+            switch(Id)
             {
                 case "DummyChat001":
                     FillWithDummyGroupChat();
@@ -133,34 +66,71 @@ namespace Xamarin.SoundChat.ViewModels
 
         private void FillWithDummySingleChat()
         {
-            _name = "Dummy group chat 2";
-            _participants = CreateDummyParticipants();
-            _messages = CreateDummyMessages();
+            Chat aux = new Chat();
+
+            aux.Id = "DummyChat001";
+            aux.Name = "The dummy single chat";
+            aux.Participants = new ObservableCollection<Contact>();
+            aux.Messages = new ObservableCollection<Message>();
+
+            this._chat = aux;
         }
 
         private void FillWithDummyGroupChat()
         {
-            _name = "Dummy group chat";
-            _participants = CreateDummyParticipants();
-            _messages = CreateDummyMessages();
+            Chat aux = new Chat();
+
+            aux.Id = "DummyChat002";
+            aux.Name = "The dummy group chat";
+            aux.Participants = CreateDummyParticipants();
+            aux.Messages = CreateDummyMessages();
+
+            this._chat = aux;
         }
 
-        private ObservableCollection<ContactViewModel> CreateDummyParticipants()
+        private ObservableCollection<Contact> CreateDummyParticipants()
         {
-            ObservableCollection<ContactViewModel> result = null;
-            result = new ObservableCollection<ContactViewModel>();
+            ObservableCollection<Contact> result = null;
+            Contact aux = null;
+            result = new ObservableCollection<Contact>();
 
-            result.Add(new ContactViewModel("Jorge", "+34 615478885", null));
-            result.Add(new ContactViewModel("Mariela", "+34 684521446", null));
-            result.Add(new ContactViewModel("Mikael", "+34 632222551", null));
+            aux = new Contact();
+            aux.Id = "001";
+            aux.NickName = "Daraciel";
+            aux.Name = "Jorge";
+            aux.PhoneNumber = "+34 615 645 584";
+            aux.Email = "daraciel@gmail.com";
+            aux.City = "Madrid";
+
+            result.Add(aux);
+
+            aux = new Contact();
+            aux.Id = "002";
+            aux.NickName = "Celestax";
+            aux.Name = "Mariela";
+            aux.PhoneNumber = "+34 600 500 400";
+            aux.Email = "dummy2@gmail.com";
+            aux.City = "Sax";
+
+            result.Add(aux);
+
+            aux = new Contact();
+            aux.Id = "003";
+            aux.NickName = "Mehka";
+            aux.Name = "Mikael";
+            aux.PhoneNumber = "+34 521 741 954";
+            aux.Email = "dummy3@gmail.com";
+            aux.City = "Sax";
+
+            result.Add(aux);
             
             return result;
         }
 
-        private ObservableCollection<IMessageViewModel> CreateDummyMessages()
+        private ObservableCollection<Message> CreateDummyMessages()
         {
-            ObservableCollection<IMessageViewModel> result = null;
-            result = new ObservableCollection<IMessageViewModel>();
+            ObservableCollection<Message> result = null;
+            result = new ObservableCollection<Message>();
 
             return result;
         }

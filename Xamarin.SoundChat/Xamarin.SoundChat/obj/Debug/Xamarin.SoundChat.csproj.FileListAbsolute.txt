@@ -33,5 +33,4 @@ C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.
 C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.pdb
 C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.dll.mdb
 C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.SoundChat.dll.mdb
-C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.dll.mdb
-C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\bin\Debug\Xamarin.SoundChat.dll.mdb
+C:\Users\DarkCrow\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat\obj\Debug\Xamarin.SoundChat.csprojResolveAssemblyReference.cache

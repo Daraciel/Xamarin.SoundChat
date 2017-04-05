@@ -144,4 +144,3 @@ C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.
 C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat.Android\obj\Debug\android\assets\Xamarin.SoundChat.Android.dll.mdb
 C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat.Android\obj\Debug\android\assets\Xamarin.SoundChat.dll.mdb
 C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat.Android\obj\Debug\Xamarin.SoundChat.Android.dll.mdb
-C:\Users\CyberCamp\Documents\GitHub\Xamarin.SoundChat\Xamarin.SoundChat\Xamarin.SoundChat.Android\bin\Debug\Xamarin.SoundChat.Android.dll.mdb
