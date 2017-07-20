@@ -11,8 +11,21 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <ListView>
-
+            <ListView
+                HasUnevenRows="True"
+                CachingStrategy="RecycleElement" 
+                SeparatorVisibility="None"
+                ItemsSource="{Binding Chats}"
+                SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell 
+                            Text="{Binding Name}"
+                            TextColor="Black"
+                            Detail="{Binding ParticipantsList}"
+                            DetailColor="Gray"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>

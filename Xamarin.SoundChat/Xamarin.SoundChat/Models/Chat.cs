@@ -11,6 +11,21 @@ namespace Xamarin.SoundChat.Models
         public string Avatar { get; set; }
         public ObservableCollection<Contact> Participants { get; set; }
         public ObservableCollection<Message> Messages { get; set; }
+        public string ParticipantsList
+        { get
+            {
+                string aux = string.Empty;
+                for(int i=0; i<Participants.Count; i++)
+                {
+                    if(i != 0)
+                    {
+                        aux += ", ";
+                    }
+                    aux += Participants[i].NickName;
+                }
+                return aux;
+            }
+        }
 
 
         [Version]

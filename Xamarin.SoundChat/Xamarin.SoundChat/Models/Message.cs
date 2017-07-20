@@ -6,6 +6,7 @@ namespace Xamarin.SoundChat.Models
     public class Message
     {
         public string Id { get; set; }
+        public Contact Emitter { get; set; }
         public string Text { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }

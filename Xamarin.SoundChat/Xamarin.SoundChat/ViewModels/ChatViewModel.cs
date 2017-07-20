@@ -7,7 +7,7 @@ using Xamarin.SoundChat.ViewModels.Base;
 
 namespace Xamarin.SoundChat.ViewModels
 {
-    public class ChatViewModel : BindableObject
+    public class ChatViewModel : ViewModelBase
     {
         #region FIELDS
 
@@ -36,6 +36,11 @@ namespace Xamarin.SoundChat.ViewModels
         #endregion
 
         #region CONSTRUCTORS
+
+        public ChatViewModel()
+        {
+
+        }
 
         public ChatViewModel(string Id)
         {
@@ -137,6 +142,20 @@ namespace Xamarin.SoundChat.ViewModels
         #endregion
 
         #region PUBLIC FUNCTIONS
+
+        #endregion
+
+        #region VIEWMODELBASE
+
+        public override void OnAppearing(object navigationContext)
+        {
+            base.OnAppearing(navigationContext);
+
+            if (navigationContext is Chat)
+            {
+                Chat = (Chat)navigationContext;
+            }
+        }
 
         #endregion
 
